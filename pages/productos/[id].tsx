@@ -35,7 +35,15 @@ const Producto = () => {
   console.log(itemData);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <>
+        <ResponsiveAppBar />
+        <Container maxWidth='lg'>
+          <BreadCrumbs />
+          <div>Loading...</div>
+        </Container>
+      </>
+    );
   }
 
   if (isError) {
@@ -114,7 +122,7 @@ const Producto = () => {
                 </Box>
               </Box>
               <Box margin={"1rem 0rem 1rem 0rem"}>
-                <ReserveModal item={itemData} />
+                {/* <ReserveModal item={itemData} /> */}
               </Box>
               <Divider sx={{ margin: "1rem 0rem 1rem 0rem" }} />
 

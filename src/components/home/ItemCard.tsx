@@ -36,32 +36,32 @@ const ItemCard = ({ item }: any) => {
           <Typography variant='body2' fontWeight={"bold"}>
             Precio original
           </Typography>
-          <Typography sx={{ textDecoration: "line-through" }} color={"red"}>
-            <NumberField
-              value={priceNew}
-              options={{
-                style: "currency",
-                currency: "MXN",
-                maximumFractionDigits: 0,
-                minimumFractionDigits: 0,
-              }}
-            />
-          </Typography>
+
+          <NumberField
+            value={priceNew}
+            options={{
+              style: "currency",
+              currency: "MXN",
+              maximumFractionDigits: 0,
+              minimumFractionDigits: 0,
+            }}
+            sx={{ textDecoration: "line-through" }}
+            color={"red"}
+          />
+
           <Typography variant='body2' fontWeight={"bold"}>
             Precio venta
           </Typography>
-          <Typography>
-            {" "}
-            <NumberField
-              value={priceSale}
-              options={{
-                style: "currency",
-                currency: "MXN",
-                maximumFractionDigits: 0,
-                minimumFractionDigits: 0,
-              }}
-            />
-          </Typography>
+
+          <NumberField
+            value={priceSale}
+            options={{
+              style: "currency",
+              currency: "MXN",
+              maximumFractionDigits: 0,
+              minimumFractionDigits: 0,
+            }}
+          />
         </CardContent>
         <CardActions>
           <Link href={`/productos/${id}`} passHref>
