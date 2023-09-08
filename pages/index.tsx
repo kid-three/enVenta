@@ -9,6 +9,9 @@ import Head from "next/head";
 export default function Home() {
   const { data, isLoading, isError } = useList<IProduct, HttpError>({
     resource: "items",
+    pagination: {
+      pageSize: 50,
+    },
   });
 
   const products = data?.data ?? [];
