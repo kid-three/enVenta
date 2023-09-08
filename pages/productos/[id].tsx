@@ -122,7 +122,8 @@ const Producto = () => {
                 </Box>
               </Box>
               <Box margin={"1rem 0rem 1rem 0rem"}>
-                {/* <ReserveModal item={itemData} /> */}
+                <ReserveModal item={itemData} />
+              
               </Box>
               <Divider sx={{ margin: "1rem 0rem 1rem 0rem" }} />
 
