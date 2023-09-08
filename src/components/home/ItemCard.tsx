@@ -41,7 +41,7 @@ const ItemCard = ({ item }: any) => {
               value={priceNew}
               options={{
                 style: "currency",
-                currency: "USD",
+                currency: "MXN",
                 maximumFractionDigits: 0,
                 minimumFractionDigits: 0,
               }}
@@ -56,7 +56,7 @@ const ItemCard = ({ item }: any) => {
               value={priceSale}
               options={{
                 style: "currency",
-                currency: "USD",
+                currency: "MXN",
                 maximumFractionDigits: 0,
                 minimumFractionDigits: 0,
               }}

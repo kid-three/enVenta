@@ -77,7 +77,7 @@ const Producto = () => {
                       value={itemData?.priceNew!}
                       options={{
                         style: "currency",
-                        currency: "USD",
+                        currency: "MXN",
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }}
@@ -92,7 +92,7 @@ const Producto = () => {
                       value={itemData?.priceSale!}
                       options={{
                         style: "currency",
-                        currency: "USD",
+                        currency: "MXN",
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }}
