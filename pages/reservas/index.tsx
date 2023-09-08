@@ -66,21 +66,6 @@ export const ReservaList: React.FC<IResourceComponentsProps> = () => {
         type: "number",
         minWidth: 200,
       },
-      {
-        field: "actions",
-        headerName: "Acciones",
-        sortable: false,
-        renderCell: function render({ row }) {
-          return (
-            <>
-              <ShowButton hideText recordItemId={row.id} />
-            </>
-          );
-        },
-        align: "center",
-        headerAlign: "center",
-        minWidth: 80,
-      },
     ],
     [translate, itemData?.data]
   );

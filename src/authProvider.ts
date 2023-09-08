@@ -51,7 +51,7 @@ export const authProvider: AuthBindings = {
 
     return {
       success: true,
-      redirectTo: "/login",
+      redirectTo: "/",
     };
   },
   register: async ({ email, password }) => {

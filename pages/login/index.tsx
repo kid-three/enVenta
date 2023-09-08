@@ -31,7 +31,7 @@ export const getServerSideProps: GetServerSideProps<{}> = async (context) => {
     return {
       props: {},
       redirect: {
-        destination: `/items`,
+        destination: `/reservas`,
         permanent: false,
       },
     };

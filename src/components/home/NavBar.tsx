@@ -107,7 +107,7 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               <MenuItem onClick={handleCloseUserMenu}>
-                <Link href={"/items"}>
+                <Link href={"/login"}>
                   <Typography textAlign='center'>Admin</Typography>
                 </Link>
               </MenuItem>
